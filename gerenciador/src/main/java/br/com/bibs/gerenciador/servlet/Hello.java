@@ -10,9 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 public class Hello extends HttpServlet {
 	
 	@Override
-	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		super.service(req, resp);
+	protected void service(HttpServletRequest req, HttpServletResponse resp){
 	}
 	
 
