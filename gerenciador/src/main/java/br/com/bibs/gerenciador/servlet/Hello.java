@@ -23,6 +23,8 @@ public class Hello extends HttpServlet {
 		out.println("Olá, mundo Servlet.");
 		out.println("</body>");
 		out.println("</html>");
+		
+		System.out.println("o bibs-servlet foi inicializado");
 	}
 	
 
