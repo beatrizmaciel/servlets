@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-//oi			urlPatterns = nome do servlet
+//bibs-server	urlPatterns = nome do servlet
 @WebServlet(urlPatterns="/bibs-server")
 public class Hello extends HttpServlet {
 	
