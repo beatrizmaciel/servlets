@@ -5,17 +5,30 @@ import java.util.List;
 
 public class Banco {
 	
-	private static List<Empresa> listaDeEmpresas = new ArrayList<>();
+	private static List<Empresa> lista = new ArrayList<>();
 
 	public void adiciona(Empresa empresa) {
-		Banco.listaDeEmpresas.add(empresa);
+		Banco.lista.add(empresa);
+	}
+	
+	/** Código estático (static) é executado quando a máquina
+	 * virtual carrega a classe. */
+	static {
+		Empresa empresa = new Empresa();
+		empresa.setNome("JavaEnterprise");
+		
+		Empresa empresa2 = new Empresa();
+		empresa2.setNome("JavaScript Enterprise");
+		
+		lista.add(empresa);
+		lista.add(empresa2);
 	}
 	
 	
 	/** GETTER */
 	
 	public List<Empresa> getEmpresas(){
-		return Banco.listaDeEmpresas;
+		return Banco.lista;
 	}
 	
 

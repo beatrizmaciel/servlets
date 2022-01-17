@@ -22,7 +22,7 @@ public class NovaEmpresaServlet extends HttpServlet {
 		String nomeEmpresa = request.getParameter("nome");
 		
 		Empresa empresa = new Empresa();
-		empresa.setNome("BibsEnterprise");
+		empresa.setNome(nomeEmpresa);
 		
 		
 		Banco banco = new Banco();
