@@ -10,4 +10,4 @@ Server: Apache TomCat 9.0
 
 IDE: Eclipse IDE for Enterprise Java and Web Developers (2021)
 
-Lib: [Jstl-1.2](https://www.devmedia.com.br/introducao-jstl-java/23582)
+Taglib: [Jstl-1.2](https://www.devmedia.com.br/introducao-jstl-java/23582)
