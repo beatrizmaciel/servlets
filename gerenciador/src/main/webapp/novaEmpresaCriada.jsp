@@ -14,10 +14,6 @@
 		Nenhuma empresa cadastrada.
 		
 		</c:if>
-		
-		<c:forEach var="i" begin="1" end="10" step="2">
-       ${i} <br />
-     	</c:forEach>
      
 	</body>
 </html>
