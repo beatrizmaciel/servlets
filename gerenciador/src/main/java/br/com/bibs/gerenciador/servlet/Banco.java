@@ -6,24 +6,28 @@ import java.util.List;
 public class Banco {
 	
 	private static List<Empresa> lista = new ArrayList<>();
-
-	public void adiciona(Empresa empresa) {
-		Banco.lista.add(empresa);
-	}
+	private static Integer chaveSequencial = 1;
+	
 	
 	/** Código estático (static) é executado quando a máquina
 	 * virtual carrega a classe. */
 	static {
 		Empresa empresa = new Empresa();
+		empresa.setId(chaveSequencial++);
 		empresa.setNome("JavaEnterprise");
 		
 		Empresa empresa2 = new Empresa();
+		empresa2.setId(chaveSequencial++);
 		empresa2.setNome("JavaScript Enterprise");
 		
 		lista.add(empresa);
 		lista.add(empresa2);
 	}
 	
+	public void adiciona(Empresa empresa) {
+		empresa.setId(chaveSequencial++);
+		Banco.lista.add(empresa);
+	}
 	
 	/** GETTER */
 	
