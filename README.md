@@ -13,6 +13,6 @@ To use TomCat, you should run your application at localhost:8080/project-name/fi
 
 - Taglib: [Jstl-1.2](https://www.devmedia.com.br/introducao-jstl-java/23582)
 
-### [Updates]
+### Updates
 
 > [01.23.2022] - Building a CRUD using servlets.
