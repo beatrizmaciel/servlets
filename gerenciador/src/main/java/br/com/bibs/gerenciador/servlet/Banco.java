@@ -1,6 +1,7 @@
 package br.com.bibs.gerenciador.servlet;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Banco {
@@ -25,7 +26,7 @@ public class Banco {
 	}
 	
 	public void adiciona(Empresa empresa) {
-		empresa.setId(chaveSequencial++);
+		empresa.setId(Banco.chaveSequencial++);
 		Banco.lista.add(empresa);
 	}
 	
@@ -35,6 +36,28 @@ public class Banco {
 		return Banco.lista;
 	}
 	
+public void removeEmpresa(Integer id) {
+		
+		/** Iterator: forma "tradicional" de fazer um laço. Cada Coleção 
+		 * (List, Map, Set) possui um objeto para iteração chamado Iterator */
+		Iterator<Empresa> it = lista.iterator();
+		while(it.hasNext()) {
+			Empresa emp = it.next();
+			
+			if(emp.getId() == id) {
+				it.remove();
+			}
+		}
+		
+		/** A solução acima é melhor do que um for, porque passamos no
+		 * objeto em si através do iterador, e não pela lista */
+		
+	}
+
+	public Empresa buscaEmpresaPelaId(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }
 

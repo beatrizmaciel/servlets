@@ -14,8 +14,17 @@ public class RemoveEmpresaServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
 		
-
+		/** o getParameter devolve sempre uma string */
+		String paramId = request.getParameter("id");
+		/** por isso temos que fazer um valueOf ou parseInt 
+		 * o valueOf devolver um Integer enquanto o parseInt
+		 * devolve um int (primitivo) */
+		Integer id = Integer.valueOf(paramId);
 		
+		Banco banco = new Banco();
+		banco.removeEmpresa(id);
+		
+		response.sendRedirect("listaEmpresas");
 		
 	}
 

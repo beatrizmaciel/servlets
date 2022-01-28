@@ -31,8 +31,9 @@ do prefix costuma ser "c", mas poderia ser qualquer outro nome --%>
 			<li>
 				${empresa.nome} - 
 				<fmt:formatDate value="${empresa.dataAbertura}" pattern="dd/mm/yyyy"/>
+				<a href="/gerenciador/mostraEmpresa?id=${empresa.id}">editar</a>
 				<%-- enviar parâmetro de requisição: ?id="${param}" --%>
-				<a href="/gerenciador/removeEmpresa?id="${empresa.id}">remover</a>
+				<a href="/gerenciador/removeEmpresa?id=${empresa.id}">remover</a>
 			</li>
 			
 		</c:forEach>
