@@ -1,5 +1,4 @@
 # servlets
-> Project Status: In development :warning:
 
 Studying servers and servlets in Java. The server I used was TomCat 9.0.
 
